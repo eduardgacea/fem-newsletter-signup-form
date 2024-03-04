@@ -27,6 +27,7 @@ body {
     font-family: var(--font-primary);
     font-weight: var(--regular);
     color: var(--dark-slate-grey);
+    background-color: var(--dark-slate-grey-transparent);
 }
 
 #root {
@@ -34,5 +35,4 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--dark-slate-grey-transparent);
 }
