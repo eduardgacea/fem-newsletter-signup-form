@@ -1,0 +1,85 @@
+.signup,
+.signup > img {
+    border-radius: 24px;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    max-width: 375px;
+}
+
+.container,
+.form,
+.ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.container > p {
+    margin: 1.25rem 0 1.25rem 0;
+}
+
+.ul {
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+}
+
+.li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form {
+    gap: 1rem;
+}
+
+.form input[type="email"] {
+    border: 1px solid var(--grey-transparent);
+    color: var(--dark-slate-grey);
+    font-size: 1rem;
+    padding: 1rem;
+    line-height: 0;
+    outline: none;
+    border-radius: 6px;
+}
+
+.form input[type="email"]::placeholder {
+    color: var(--grey-transparent);
+}
+
+.form input[type="email"]:focus {
+    border-color: var(--primary);
+}
+
+.label {
+    font-size: 0.8rem;
+    font-weight: var(--bold);
+    display: flex;
+    justify-content: space-between;
+}
+
+.label > div {
+    color: var(--primary);
+}
+
+.error {
+    background-color: var(--primary-error-state);
+    color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+@media screen and (min-width: 1440px) {
+    .signup {
+        max-width: 1440px;
+        flex-direction: row-reverse;
+        gap: 1rem;
+        padding: 2rem;
+    }
+}

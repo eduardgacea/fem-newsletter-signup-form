@@ -1,0 +1,47 @@
+.confirmation,
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.confirmation {
+    background-color: var(--white);
+    max-width: 375px;
+    padding: 10rem 2rem 2rem 2rem;
+    height: 783px;
+    border-radius: 24px;
+    justify-content: space-between;
+}
+
+.container {
+    gap: 2rem;
+}
+
+.container > img {
+    width: 64px;
+}
+
+.container > h1 {
+    font-size: 3rem;
+    font-weight: var(--bold);
+}
+
+.container > p {
+    line-height: 1.5;
+}
+
+.container > p > span {
+    font-weight: var(--bold);
+}
+
+@media screen and (min-width: 1440px) {
+    .confirmation {
+        height: auto;
+        padding: 3rem 2rem 3rem 2rem;
+    }
+
+    .container {
+        margin-bottom: 2rem;
+        gap: 1rem;
+    }
+}

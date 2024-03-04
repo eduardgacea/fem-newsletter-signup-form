@@ -1,0 +1,38 @@
+:root {
+    /* typography */
+    --font-primary: "Roboto";
+    --regular: 400;
+    --bold: 700;
+
+    /* color pallete */
+    --primary: hsl(4, 100%, 67%);
+    --primary-transparent: hsla(4, 100%, 67%, 0.45);
+    --primary-error-state: hsla(4, 100%, 67%, 0.25);
+    --secondary: hsl(346, 100%, 66%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --dark-slate-grey-transparent: hsla(234, 29%, 20%, 0.9);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --grey-transparent: hsl(231, 7%, 60%, 0.5);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-weight: var(--regular);
+    color: var(--dark-slate-grey);
+}
+
+#root {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-slate-grey-transparent);
+}
